@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html, body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*--------header*/
+.header {
+    background: #090808;
+}
+
+.header__logo {
+    padding: 8px 0 8px 32px;
+    display: block;
+}
+
+
+
+/*--------info*/
+.main {
+    flex: 1 0 auto;
+}
+
+.container {
+    padding: 160px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.main__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    max-width: 50%;
+    word-wrap: break-word;
+    font-size: 2rem;
+}
+
+.info__list-title {
+    padding: 58px 0 8px;
+}
+
+
+/*-----------form*/
+.form {
+    display: flex;
+    flex: 0 0 400px;
+    flex-direction: column;
+    font-size: 1rem;
+    border: 1px solid black;
+    padding: 32px 16px;
+    height: 278px;
+}
+
+.form input {
+    border: 1px solid black;
+    padding: 14px 0 15px 11px;
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.form__button {
+    background: black;
+    text-align: center;
+    padding: 14px 0 15px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.form__button:hover {
+    cursor: pointer;
+}
+
+
+/*---------footer*/
+.footer {
+    background: #737373;
+}
+
+.footer__logo {
+    padding: 48px 0 48px 32px;
+    display: block;
+}
+
+
+
+
+@media (max-width: 425px) {
+    .main__content {
+        flex-direction: column-reverse;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    html {
+        font-size: 8px;
+    }
+
+    .form {
+        margin: 10px 0;
+        flex: 0 0 200px;
+        padding: 16px 8px;
+    }
+
+    .footer__logo {
+        padding: 24px 32px;
+    }
+
+    .info {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+    .container {
+        padding: 40px;
+    }
+
+    .form {
+        flex: 0 0 300px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .container {
+        padding: 80px;
+    }
+}
